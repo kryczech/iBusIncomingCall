@@ -1,0 +1,54 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="128dp"
+        android:layout_height="128dp"
+        android:contentDescription="@string/icon_description"
+        android:src="@drawable/ic_launcher" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="300dp"
+        android:layout_height="64dp"
+        android:layout_toRightOf="@+id/imageView1"
+        android:gravity="center_horizontal"
+        android:text="@string/firstname"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/TextView01"
+        android:layout_width="300dp"
+        android:layout_height="64dp"
+        android:layout_below="@+id/textView1"
+        android:layout_toRightOf="@+id/imageView1"
+        android:gravity="center_horizontal"
+        android:text="@string/lastname"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/buttonAnswer"
+        android:layout_width="208dp"
+        android:layout_height="64dp"
+        android:layout_below="@+id/TextView01"
+        android:layout_marginRight="6dp"
+        android:background="#36f328"
+        android:gravity="center"
+        android:text="@string/answer"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/buttonIgnore"
+        android:layout_width="208dp"
+        android:layout_height="64dp"
+        android:layout_below="@+id/TextView01"
+        android:layout_marginLeft="6dp"
+        android:layout_toRightOf="@+id/buttonAnswer"
+        android:background="#e7142d"
+        android:gravity="center"
+        android:text="@string/ignore"
+        android:textSize="30sp" />
+
+</RelativeLayout>
